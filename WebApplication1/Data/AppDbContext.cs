@@ -1,5 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using WebApplication1.Models;
+using WebApplication1.Data.Models;
 
 namespace WebApplication1.Data
 {
@@ -9,7 +9,6 @@ namespace WebApplication1.Data
         {
         }
 
-        public DbSet<Product> Products { get; set; }
-        // Add DbSet properties for other entities if needed
+        public DbSet<Category> Categories { get; set; }
     }
 }
